@@ -5,67 +5,74 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.myapplication.table_info">
+        tools:context="com.example.myapplication.TableInfoActivity">
 
     <ScrollView
-            android:id="@+id/scrollView"
+            android:id="@+id/scroll"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/foot">
+            app:layout_constraintBottom_toTopOf="@id/foot"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0">
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent">
-            android:id="@+id/top">
-        <TextView
-                android:layout_marginLeft="50dp"
-                android:text="\nСтол №1"
-                android:textSize="20sp"
+        <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/table_namber"/>
-        <TextView
-                android:layout_marginLeft="50dp"
-                android:text="\n\nСвободен"
-                android:textSize="20sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/table_busy"/>
-        <TextView
-                android:layout_marginLeft="50dp"
-                android:text="\n\nКоличетво мест: 4"
-                android:textSize="20sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/table_places"/>
-        <EditText
-                android:id="@+id/user"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-
-                android:hint="Имя"
-                android:inputType="text"
-                android:selectAllOnFocus="true"/>
-        <EditText
-                android:id="@+id/phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:hint="Номер"
-                android:inputType="phone"
-                android:selectAllOnFocus="true"/>
-    </LinearLayout>
+                app:layout_constraintTop_toTopOf="parent">
+                android:id="@+id/top">
+            <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="\nСтол №1"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/table_namber"/>
+            <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="\n\nСвободен"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/table_busy"/>
+            <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="\n\nКоличетво мест: 4"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/table_places"/>
+            <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="150dp"
+                    android:hint="Имя"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"/>
+            <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:hint="Номер"
+                    android:inputType="phone"
+                    android:selectAllOnFocus="true"/>
+        </LinearLayout>
     </ScrollView>
     <LinearLayout
             android:orientation="vertical"
+            android:background="@color/Gray"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="@+id/top"

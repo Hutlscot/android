@@ -14,11 +14,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.example.myapplication.table_info">
+        <activity android:name="com.example.myapplication.TableInfoActivity">
         </activity>
-        <activity android:name=".reserve">
+        <activity android:name="com.example.myapplication.ReserveActivity">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.myapplication.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
