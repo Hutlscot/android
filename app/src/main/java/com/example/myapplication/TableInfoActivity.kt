@@ -14,11 +14,11 @@ class TableInfoActivity : AppCompatActivity() {
     }
     companion object {
 
-        const val TOTAL_NAMBER = "total_count"
+        const val TOTAL_NUMBER = "total_count"
 
     }
     fun getinfo(){
-        val namber=intent.getStringExtra(TOTAL_NAMBER)
-        table_namber.text="\n$namber"
+        val number=intent.getStringExtra(TOTAL_NUMBER)
+        table_number.text="\n$number"
     }
 }

@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val button = view as Button
         val info = Intent(this, com.example.myapplication.TableInfoActivity::class.java)
         val counttable = button.text.toString()
-        info.putExtra(TableInfoActivity.TOTAL_NAMBER, counttable)
+        info.putExtra(TableInfoActivity.TOTAL_NUMBER, counttable)
         startActivity(info)
     }
     fun startapp(){
