@@ -14,19 +14,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        }
+    }
+
     fun map(view: View) {
         val map = Intent(this, ReserveActivity::class.java)
         startActivity(map)
     }
 
-
     fun info(view: View) {
         val button = view as Button
         val info = Intent(this, com.example.myapplication.TableInfoActivity::class.java)
-        val counttable= button.text.toString()
+        val counttable = button.text.toString()
         info.putExtra(TableInfoActivity.TOTAL_NAMBER, counttable)
         startActivity(info)
     }
-    class Table(val namber:Int,val busy:String, val places:Int)
+    fun startapp(){
+        val table = Table(1, "aerg", 1)
     }
+
+
+    class Table(val number: Int, val busy: String, val places: Int)
+}
