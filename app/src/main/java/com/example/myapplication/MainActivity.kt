@@ -28,4 +28,5 @@ class MainActivity : AppCompatActivity() {
         info.putExtra(TableInfoActivity.TOTAL_NAMBER, counttable)
         startActivity(info)
     }
+    class Table(val namber:Int,val busy:String, val places:Int)
     }

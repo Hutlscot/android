@@ -45,6 +45,7 @@
             <Button
                     android:text="Стол №3"
                     android:layout_margin="5dp"
+                    android:onClick="info"
                     android:layout_width="match_parent"
                     android:background="@color/Green"
                     android:layout_height="100dp"
@@ -52,6 +53,7 @@
             <Button
                     android:text="Стол №4"
                     android:layout_margin="5dp"
+                    android:onClick="info"
                     android:layout_width="match_parent"
                     android:background="@color/Green"
                     android:layout_height="100dp"
@@ -64,6 +66,54 @@
                     android:background="@color/Green"
                     android:layout_height="100dp"
                     android:id="@+id/button5"/>
+            <Button
+                    android:text="Стол №6"
+                    android:onClick="info"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/Green"
+                    android:layout_height="100dp"
+                    android:id="@+id/button6"/>
+            <Button
+                    android:text="Стол №7"
+                    android:onClick="info"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/Green"
+                    android:layout_height="100dp"
+                    android:id="@+id/button7"/>
+            <Button
+                    android:text="Стол №8"
+                    android:onClick="info"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/Green"
+                    android:layout_height="100dp"
+                    android:id="@+id/button8"/>
+            <Button
+                    android:text="Стол №9"
+                    android:onClick="info"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/Green"
+                    android:layout_height="100dp"
+                    android:id="@+id/button9"/>
+            <Button
+                    android:text="Стол №10"
+                    android:onClick="info"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/Green"
+                    android:layout_height="100dp"
+                    android:id="@+id/button10"/>
+            <Button
+                    android:text="Стол №11"
+                    android:onClick="info"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/Green"
+                    android:layout_height="100dp"
+                    android:id="@+id/button11"/>
         </LinearLayout>
 
     </ScrollView>
@@ -87,6 +137,6 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
-                android:layout_height="70dp" android:id="@+id/button6"/>
+                android:layout_height="70dp" android:id="@+id/button12"/>
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
