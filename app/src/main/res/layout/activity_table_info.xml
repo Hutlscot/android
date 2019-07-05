@@ -87,7 +87,7 @@
     </ScrollView>
     <LinearLayout
             android:orientation="vertical"
-            android:background="@color/Gray"
+            android:background="@color/Transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -101,6 +101,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:id="@+id/button6"/>
+                android:id="@+id/button6"
+        />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
