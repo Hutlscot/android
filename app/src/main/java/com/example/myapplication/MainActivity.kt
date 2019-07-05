@@ -1,19 +1,13 @@
 package com.example.myapplication
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.reservedtables.R
-import kotlinx.android.synthetic.main.activity_main.*
-import java.text.FieldPosition
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
+        val recyclerView: RecyclerView = findViewById(R.id.view)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = Adapter(generateFakeValues())
@@ -47,5 +41,5 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    class Table(val number: Int, val busy: String, val places: Int)
+    class Table(val number: Int, val busy: Boolean, val places: Int)
 }
