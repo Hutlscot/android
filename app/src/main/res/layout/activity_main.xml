@@ -9,121 +9,17 @@
         tools:context="com.example.myapplication.MainActivity">
 
 
-    <ScrollView
-            android:id="@+id/scrollView"
+    <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/foot">
-
-        <LinearLayout
-                android:id="@+id/top"
-                app:layout_constraintTop_toTopOf="parent"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            <Button
-                    android:text="Стол №1"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button1"
-            />
-            <Button
-                    android:text="Стол №2"
-                    android:layout_margin="5dp"
-                    android:onClick="info"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button2"/>
-            <Button
-                    android:text="Стол №3"
-                    android:layout_margin="5dp"
-                    android:onClick="info"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button3"/>
-            <Button
-                    android:text="Стол №4"
-                    android:layout_margin="5dp"
-                    android:onClick="info"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button4"/>
-            <Button
-                    android:text="Стол №5"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button5"/>
-            <Button
-                    android:text="Стол №6"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button6"/>
-            <Button
-                    android:text="Стол №7"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button7"/>
-            <Button
-                    android:text="Стол №8"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button8"/>
-            <Button
-                    android:text="Стол №9"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button9"/>
-            <Button
-                    android:text="Стол №10"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button10"/>
-            <Button
-                    android:text="Стол №11"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button11"/>
-        </LinearLayout>
-
-    </ScrollView>
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+    />
 
     <FrameLayout
             android:id="@+id/foot"
             android:background="@color/Gray"
             android:layout_width="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/scrollView"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_height="wrap_content">

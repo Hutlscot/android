@@ -56,7 +56,7 @@
                     android:layout_marginEnd="24dp"
                     android:layout_marginTop="90dp"
                     android:hint="Имя"
-                    android:maxLength="30"
+                    android:maxLength="25"
                     android:inputType="text"
                     android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZАаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя"
                     android:selectAllOnFocus="true"/>
