@@ -13,15 +13,9 @@ import kotlinx.android.synthetic.main.activity_table_info.*
 
 class TableInfoActivity : AppCompatActivity() {
 
-    val DIALOG_DATE:Int=1
-    var myYear:Int = 2018
-    var myMonth:Int = 7
-    var myDay:Int = 6
-    var tvDate: EditText? =null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_table_info)
-        tvDate=findViewById(R.id.tvDate)
         getinfo()
     }
 
@@ -37,7 +31,7 @@ class TableInfoActivity : AppCompatActivity() {
     fun reserve(view:View){
 
         if(name.getText().toString().equals("")||phone.getText().toString().equals("")
-            ||time.getText().toString().equals("")|| tvDate?.getText().toString().equals(""))
+            ||time.getText().toString().equals(""))
         {
             val toast=Toast.makeText(this,"Для продолжения заполните все поля",Toast.LENGTH_SHORT)
             toast.show()
@@ -56,24 +50,5 @@ class TableInfoActivity : AppCompatActivity() {
             finish()
         }
     }
-
-
-    fun getDate(view: View){
-        showDialog(DIALOG_DATE)
-    }
-
-    override fun onCreateDialog(id: Int): Dialog {
-        return if (id == DIALOG_DATE) {
-            DatePickerDialog(this, myCallBack, myYear, myMonth, myDay)
-        } else super.onCreateDialog(id)
-    }
-    var myCallBack: DatePickerDialog.OnDateSetListener =
-        DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
-            if(year<6)
-            myYear = year
-            myMonth = monthOfYear+1
-            myDay = dayOfMonth
-            tvDate?.setText("$myDay/$myMonth/$myYear")
-        }
 
 }
