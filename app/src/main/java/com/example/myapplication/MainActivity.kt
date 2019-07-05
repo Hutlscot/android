@@ -31,6 +31,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(info)
     }
 
+    fun selectDate(view: View){
+        val selectDate = Intent(this, com.example.myapplication.DateTimeActivity::class.java)
+        startActivity(selectDate)
+    }
+
     private fun generateFakeValues(): List<String>{  //добавление
         val values = mutableListOf<String>()
         for(i in 1..10) //8 столов
