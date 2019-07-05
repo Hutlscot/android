@@ -83,17 +83,6 @@
                     android:inputType="time"
                     android:ems="10"
                     android:selectAllOnFocus="true"/>
-            <EditText
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/tvDate"
-                    android:clickable="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginEnd="24dp"
-                    android:hint="Выберете дату"
-                    android:onClick="getDate"
-                   android:focusable="false"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout

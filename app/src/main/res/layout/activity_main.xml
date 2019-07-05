@@ -20,8 +20,9 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <FrameLayout
+    <LinearLayout
             android:id="@+id/foot"
+            android:orientation="horizontal"
             android:background="@color/Gray"
             android:layout_width="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -30,35 +31,34 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_height="wrap_content">
 
-        <Button
-                android:text="Изменить\nдату"
-                android:onClick="selectDate"
-                android:layout_marginBottom="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
+        <EditText
+                android:layout_marginTop="35dp"
+                android:id="@+id/tvDate"
+                android:clickable="true"
+                android:text="06/07/2019"
+                android:textAlignment="center"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
-                android:id="@+id/changeDate"
-        />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:onClick="getDate"
+                android:hint="Выберите\nдату"
+                android:focusable="false"/>
         <Button
                 android:text="Карта\nстолов"
                 android:onClick="map"
-                android:layout_marginLeft="150dp"
-                android:layout_marginBottom="30dp"
-                android:layout_marginTop="30dp"
+                android:layout_margin="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:id="@+id/map"
         />
         <Button
-                android:text="Контакты"
+                android:text="Контакты\n "
                 android:onClick="map"
-                android:layout_marginLeft="260dp"
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:id="@+id/contact"
         />
-    </FrameLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
