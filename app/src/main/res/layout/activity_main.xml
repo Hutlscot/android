@@ -9,144 +9,49 @@
         tools:context="com.example.myapplication.MainActivity">
 
 
-    <ScrollView
-            android:id="@+id/scrollView"
+    <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:id="@+id/view"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/foot">
 
-        <LinearLayout
-                android:id="@+id/top"
-                app:layout_constraintTop_toTopOf="parent"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
 
-            <Button
-                    android:text="Стол №1"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button1"
-            />
-            <Button
-                    android:text="Стол №2"
-                    android:layout_margin="5dp"
-                    android:onClick="info"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button2"/>
-            <Button
-                    android:text="Стол №3"
-                    android:layout_margin="5dp"
-                    android:onClick="info"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button3"/>
-            <Button
-                    android:text="Стол №4"
-                    android:layout_margin="5dp"
-                    android:onClick="info"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button4"/>
-            <Button
-                    android:text="Стол №5"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button5"/>
-            <Button
-                    android:text="Стол №6"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button6"/>
-            <Button
-                    android:text="Стол №7"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button7"/>
-            <Button
-                    android:text="Стол №8"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button8"/>
-            <Button
-                    android:text="Стол №9"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button9"/>
-            <Button
-                    android:text="Стол №10"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button10"/>
-            <Button
-                    android:text="Стол №11"
-                    android:onClick="info"
-                    android:layout_margin="5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/Green"
-                    android:layout_height="100dp"
-                    android:id="@+id/button11"/>
-        </LinearLayout>
-
-    </ScrollView>
-
-    <LinearLayout
+    <FrameLayout
             android:id="@+id/foot"
             android:background="@color/Gray"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/scrollView"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             android:layout_height="wrap_content">
 
         <Button
-                android:text="Сменить\nдату"
-                android:onClick="map"
-                android:layout_marginTop="20dp"
+                android:text="Изменить\nдату"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp" android:id="@+id/button12"/>
+                android:layout_height="70dp" android:id="@+id/changeDate"/>
         <Button
                 android:text="Карта\nстолов"
                 android:onClick="map"
-                android:layout_margin="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp" android:id="@+id/button13"/>
+                android:layout_height="70dp" android:id="@+id/map"/>
         <Button
-                android:text="Контакты\n"
+                android:text="Контакты"
                 android:onClick="map"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp" android:id="@+id/button14"/>
-
-    </LinearLayout>
+                android:layout_height="70dp" android:id="@+id/contact"/>
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

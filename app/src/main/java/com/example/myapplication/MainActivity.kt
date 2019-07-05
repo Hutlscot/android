@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.reservedtables.R
 
 class MainActivity : AppCompatActivity() {
@@ -13,31 +15,29 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val recyclerView: RecyclerView = findViewById(R.id.view)
 
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = Adapter(generateFakeValues())
     }
 
     fun map(view: View) {
         val map = Intent(this, ReserveActivity::class.java)
         startActivity(map)
-        /*val jsonStr= """
-    {
-        "number": "1",
-        "places": 5,
-        "busy": true
-    }
-    """.trimIndent()
-*/
     }
 
     fun info(view: View) {
-        val button = view as Button
         val info = Intent(this, com.example.myapplication.TableInfoActivity::class.java)
-        val counttable = button.text.toString()
-        info.putExtra(TableInfoActivity.TOTAL_NUMBER, counttable)
         startActivity(info)
     }
-    fun startapp(){
-        val table = Table(1, false, 1)
+
+    private fun generateFakeValues(): List<String>{  //добавление
+        val values = mutableListOf<String>()
+        for(i in 1..10) //8 столов
+        {
+            values.add("$i Стол")
+        }
+        return values
     }
 
 
