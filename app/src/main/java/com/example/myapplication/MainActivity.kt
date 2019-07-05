@@ -41,5 +41,5 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    class Table(val number: Int, val busy: Boolean, val places: Int)
+    class Reserve (val id : Int, val busy: Boolean, val places: Int)
 }
