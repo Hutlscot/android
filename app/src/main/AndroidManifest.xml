@@ -14,6 +14,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.example.myapplication.DateTimeActivity">
+        </activity>
         <activity android:name="com.example.myapplication.TableInfoActivity">
         </activity>
         <activity android:name="com.example.myapplication.ReserveActivity">

@@ -32,11 +32,14 @@
 
         <Button
                 android:text="Изменить\nдату"
+                android:onClick="selectDate"
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp" android:id="@+id/changeDate"/>
+                android:layout_height="70dp"
+                android:id="@+id/changeDate"
+        />
         <Button
                 android:text="Карта\nстолов"
                 android:onClick="map"
@@ -44,7 +47,9 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp" android:id="@+id/map"/>
+                android:layout_height="70dp"
+                android:id="@+id/map"
+        />
         <Button
                 android:text="Контакты"
                 android:onClick="map"
@@ -52,6 +57,8 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp" android:id="@+id/contact"/>
+                android:layout_height="70dp"
+                android:id="@+id/contact"
+        />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
