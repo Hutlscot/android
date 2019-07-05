@@ -19,6 +19,14 @@ class MainActivity : AppCompatActivity() {
     fun map(view: View) {
         val map = Intent(this, ReserveActivity::class.java)
         startActivity(map)
+        /*val jsonStr= """
+    {
+        "number": "1",
+        "places": 5,
+        "busy": true
+    }
+    """.trimIndent()
+*/
     }
 
     fun info(view: View) {
@@ -29,9 +37,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(info)
     }
     fun startapp(){
-        val table = Table(1, "aerg", 1)
+        val table = Table(1, false, 1)
     }
 
 
-    class Table(val number: Int, val busy: String, val places: Int)
+    class Table(val number: Int, val busy: Boolean, val places: Int)
 }

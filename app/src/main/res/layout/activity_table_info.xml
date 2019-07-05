@@ -49,7 +49,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/table_places"/>
             <EditText
-                    android:id="@+id/user"
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
@@ -57,7 +57,7 @@
                     android:layout_marginTop="90dp"
                     android:hint="Имя"
                     android:maxLength="30"
-                    android:inputType="text"
+                    android:inputType="textCapWords"
                     android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZАаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя"
                     android:selectAllOnFocus="true"/>
             <EditText
@@ -84,6 +84,7 @@
             android:id="@+id/foot">
         <Button
                 android:text="Забронировать"
+                android:onClick="reserve"
                 android:layout_marginLeft="90dp"
                 android:layout_marginRight="90dp"
                 android:layout_marginBottom="30dp"

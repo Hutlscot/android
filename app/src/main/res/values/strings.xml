@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Свободная касса</string>
+    <string name="app_name">Заказ столиков кафе «ЗаЕду»</string>
     <string name="table_1">Стол №1</string>
     <string name="busy">Свободен</string>
 </resources>
