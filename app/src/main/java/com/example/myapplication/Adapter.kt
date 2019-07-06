@@ -19,6 +19,8 @@ class Adapter constructor(private val values: List<String>): RecyclerView.Adapte
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int){
         holder?.textView?.text = values[position]
+
+
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){

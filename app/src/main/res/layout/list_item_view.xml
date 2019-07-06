@@ -6,12 +6,13 @@
               android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="72dp"
-              android:paddingTop="8dp"
-              android:paddingBottom="8dp"
-              android:paddingStart="30dp"
-              android:paddingEnd="16dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+              android:layout_marginStart="30dp"
+              android:layout_marginEnd="30dp"
               android:gravity="center_vertical"
-              android:onClick="info">
+              android:background="@color/Green"
+              >
 
     <ImageView
             android:layout_width="32dp"
@@ -24,6 +25,7 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="20dp"
     tools:text="TestingTest"
+    android:onClick="info"
     android:textSize="9pt"
     />
 
