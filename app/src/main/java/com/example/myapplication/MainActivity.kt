@@ -5,9 +5,7 @@ import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -36,30 +34,52 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun info(view: View) {
+        val str:String= (view as TextView)?.text.toString()
         val info = Intent(this, com.example.myapplication.TableInfoActivity::class.java)
+        info.putExtra(com.example.myapplication.TableInfoActivity.TOTAL_NUMBER,str)
         startActivity(info)
     }
 
-    fun selectDate(view: View){
-        val selectDate = Intent(this, com.example.myapplication.DateTimeActivity::class.java)
-        startActivity(selectDate)
+    fun Contact(view: View){
+        val contact = Intent(this, com.example.myapplication.DateTimeActivity::class.java)
+        startActivity(contact)
+    }
+    class  Reserve(var id:Int, val busy:String, var places:Int)
+    val table = List(11) { Reserve(1, "cвободен", 4) }
+    fun load(){
+         table[0].id = 1
+         table[1].id = 2
+         table[2].id = 3
+         table[3].id = 4
+         table[3].places=2
+         table[4].id = 5
+         table[5].id = 6
+         table[6].id = 7
+         table[6].places=2
+         table[7].id = 8
+         table[7].places=6
+         table[8].id = 9
+         table[8].places=6
+         table[9].id = 10
+         table[9].places=8
+         table[10].id = 11
+         table[10].places=8
+
     }
 
     private fun generateFakeValues(): List<String>{  //добавление
+        load()
         val values = mutableListOf<String>()
-        for(i in 1..10) //8 столов
+        for(i in 0..10) //8 столов
         {
-            values.add("$i Стол")
+            values.add(table[i].id.toString()+" cтол   ("+table[i].busy+")\nКол-во мест: "+table[i].places.toString())
         }
         return values
     }
 
-
-    class Reserve (val id : Int, val busy: Boolean, val places: Int)
     fun getDate(view: View){
         showDialog(DIALOG_DATE)
     }
-
     override fun onCreateDialog(id: Int): Dialog {
         return if (id == DIALOG_DATE) {
             DatePickerDialog(this, myCallBack, myYear, myMonth, myDay)
