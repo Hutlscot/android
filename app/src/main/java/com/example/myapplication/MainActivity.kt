@@ -7,11 +7,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.reservedtables.R
+import kotlinx.android.synthetic.main.activity_table_info.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +39,9 @@ class MainActivity : AppCompatActivity() {
 
     fun info(view: View) {
         val info = Intent(this, com.example.myapplication.TableInfoActivity::class.java)
+
         startActivity(info)
+
     }
 
     fun selectDate(view: View){
@@ -47,15 +51,29 @@ class MainActivity : AppCompatActivity() {
 
     private fun generateFakeValues(): List<String>{  //добавление
         val values = mutableListOf<String>()
-        for(i in 1..10) //8 столов
+        for(i in 0..10) //11 столов
         {
-            values.add("$i Стол")
+            values.add("Стол №${i+1}, мест: ${table[i].places}")
         }
         return values
     }
 
 
     class Reserve (val id : Int, val busy: Boolean, val places: Int)
+
+    val table = List(11) { Reserve(0, false, 4)
+                                Reserve(1, false, 4)
+                                Reserve(2, false, 4)
+                                Reserve(3, false, 2)
+                                Reserve(4, false, 4)
+                                Reserve(5, false, 4)
+                                Reserve(6, false, 2)
+                                Reserve(7, false, 6)
+                                Reserve(8, false, 6)
+                                Reserve(9, false, 8)
+                                Reserve(10, false, 8) }
+
+
     fun getDate(view: View){
         showDialog(DIALOG_DATE)
     }

@@ -12,7 +12,6 @@ class Adapter constructor(private val values: List<String>): RecyclerView.Adapte
     override fun getItemCount(): Int = values.size
 
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent?.context).inflate(R.layout.list_item_view, parent, false)
         return ViewHolder(itemView)

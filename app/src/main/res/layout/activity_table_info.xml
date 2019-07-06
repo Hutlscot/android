@@ -27,7 +27,7 @@
             <TextView
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
-                    android:text="\nСтол №1"
+                    android:text="Стол №"
                     android:textSize="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             <TextView
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
-                    android:text="\n\nStatus"
+                    android:text="\n\nСтатус: "
                     android:textSize="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             <TextView
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
-                    android:text="\n\nCount Slots"
+                    android:text="\n\nКол-во мест: "
                     android:textSize="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
