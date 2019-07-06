@@ -22,7 +22,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
                 android:id="@+id/top">
             <TextView
                     android:layout_marginLeft="50dp"
@@ -65,18 +65,24 @@
                     android:maxLength="11"
                     android:inputType="phone"
                     android:selectAllOnFocus="true"/>
+
             <EditText
                     android:layout_marginTop="10dp"
-                    android:id="@+id/time"
+                    android:id="@+id/tvTime"
+                    android:textSize="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginEnd="24dp"
                     android:hint="Время"
+                    android:clickable="true"
+                    android:onClick="click"
                     android:inputType="time"
                     android:ems="10"
-                    android:selectAllOnFocus="true"/>
+                    android:selectAllOnFocus="false"/>
+
         </LinearLayout>
+
     </ScrollView>
     <LinearLayout
             android:orientation="vertical"

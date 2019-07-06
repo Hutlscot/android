@@ -6,12 +6,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
+        android:background="@drawable/background"
         tools:context="com.example.myapplication.ReserveActivity">
     <TextView
             android:text="План зала"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="50dp"
             android:layout_width="match_parent"
@@ -25,3 +27,4 @@
             app:layout_constraintTop_toBottomOf="@id/title"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
